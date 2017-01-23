@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.dragos.foodway.spinnersiliste.LocatiiJudetOras"
+    android:background="@drawable/fundal"
+    >
+
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="220dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/the_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/spinner1"
+        android:entries="@array/lista_judete"
+        android:background="@drawable/spinnerbackground"
+        android:spinnerMode="dialog"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_below="@+id/label_judet"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        style="@style/Theme.NoTitleBar.WithColoredSpinners" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/spinner2"
+        android:background="@drawable/spinnerbackground"
+        android:spinnerMode="dialog"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_below="@+id/label_localitate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        style="@style/Theme.NoTitleBar.WithColoredSpinners" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/btn_selectie"
+        android:id="@+id/btn_selectie"
+        android:clickable="true"
+        android:enabled="true"
+        android:textSize="20sp"
+        android:background="@drawable/orangeroundbtn"
+        android:textColor="#710000"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/label_judet"
+        android:id="@+id/label_judet"
+        android:textColor="#FFFFDA09"
+        android:textSize="20sp"
+        android:textStyle="bold|normal"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/label_localitate"
+        android:layout_alignStart="@+id/label_localitate"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/label_localitate"
+        android:id="@+id/label_localitate"
+        android:textColor="#FFFFDA09"
+        android:textSize="20sp"
+        android:textStyle="bold|normal"
+        android:layout_below="@+id/spinner1"
+        android:layout_alignLeft="@+id/spinner2"
+        android:layout_alignStart="@+id/spinner2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

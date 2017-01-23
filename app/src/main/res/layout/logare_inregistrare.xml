@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.dragos.foodway.Junk.NOTUSED_CreareContRestLogin"
+    android:background="@drawable/fundal"
+    android:id="@+id/formular_logare_client">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo_zone"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/logo"
+            android:background="@drawable/logo"
+            android:layout_above="@+id/panel_login"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/panel_login"
+        android:layout_below="@+id/logo_zone"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/restaurant_client">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_restaurant"
+                android:id="@+id/btn_restaurant"
+                android:layout_weight="0.5"
+                android:background="@drawable/restaurantrosu"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:maxHeight="30dp"
+                android:textColor="#e6ffffff"
+                />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_client"
+                android:id="@+id/btn_client"
+                android:layout_weight="0.5"
+                android:background="@drawable/clientalb"
+                android:textColor="#710000"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:maxHeight="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/formular_login"
+            android:background="#E6ffffff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/autentificare_label"
+                android:id="@+id/autentificare_label"
+                android:textColor="#710000"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txt_utilizator"
+                android:hint="@string/txt_utilizator"
+                android:textColorHint="#710000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#710000"
+                android:textSize="22sp"
+                android:textStyle="italic"
+                android:textIsSelectable="false" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/txt_parola"
+                android:hint="@string/txt_parola"
+                android:textColorHint="#710000"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#710000"
+                android:textSize="22sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/butoane"
+            android:background="@drawable/bottomleftrightcorner">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/loginSiAnuleaza"
+                android:weightSum="1">
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buton_login"
+                    android:id="@+id/button"
+                    android:textColor="#e6ffffff"
+                    android:background="@drawable/butonrosu"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:textAllCaps="false"
+                    android:maxHeight="35dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="0dp" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buton_anuleaza"
+                    android:id="@+id/button2"
+                    android:textColor="#e6ffffff"
+                    android:background="@drawable/butonrosu"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:textAllCaps="false"
+                    android:maxHeight="35dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/de_inregistrat">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_de_inregistrat"
+                    android:id="@+id/btn_cont_nou"
+                    android:textSize="20sp"
+                    android:textColor="#e6ffffff"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/butonrosu"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

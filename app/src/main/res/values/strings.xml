@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">FoodWay</string>
+    <string name="btn_selectie">Continua</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_meniu_principal">MeniuPrincipal</string>
+    <string name="title_activity_location_city">locationCity</string>
+    <string name="judete">Judete</string>
+    <string name="title_activity_firme__catering">Firme_Catering</string>
+    <string name="title_activity_iregistrare">Iregistrare</string>
+
+    <string name="lbl_judet">Selectati Judet</string>
+    <string name="lbl_localitate">Selectati Localitate</string>
+    <!-- Button text -->
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+    <string name="btn_inregistrare_cont">Creaza cont Foodway</string>
+    <string name="btn_login">Autentificare</string>
+    <string name="btn_restaurant">Restaurant</string>
+    <string name="btn_client">Client</string>
+    <string name="btn_de_inregistrat">Inregistreaza Cont </string>
+    <string name="autentificare_label">Autentificare</string>
+    <string name="inregistrare_label">Inregistrare</string>
+    <string name="buton_login">Autentificare</string>
+    <string name="buton_anuleaza">Anuleaza</string>
+    <string name="buton_inregistrare">Inregistrare</string>
+    <string name="txt_utilizator">Utilizator</string>
+    <string name="txt_parola">Parola</string>
+    <string name="txt_nume">Nume</string>
+    <string name="txt_email">E-mail</string>
+    <!-- Lista Alba -->
+    <string-array name="lista_judete">
+        <item>Alba</item>
+        <item>Brasov</item>
+        <item>Cluj</item>
+        <item>Hunedoara</item>
+        <item>Sibiu</item>
+    </string-array>
+    <string-array name="lista_alba">
+        <item>Alba-Iulia</item>
+        <item>Aiud</item>
+        <item>Blaj</item>
+        <item>Cugir</item>
+        <item>Sebes</item>
+    </string-array>
+    <string-array name="lista_brasov">
+        <item>Brasov</item>
+        <item>Fagaras</item>
+        <item>Sacele</item>
+        <item>Rasnov</item>
+        <item>Zamesti</item>
+    </string-array>
+    <string-array name="lista_cluj">
+        <item>Cluj-Napoca</item>
+        <item>Dej</item>
+        <item>Floresti</item>
+        <item>Gherla</item>
+        <item>Turda</item>
+    </string-array>
+    <string-array name="lista_hunedoara">
+        <item>Deva</item>
+        <item>Hunedoara</item>
+        <item>Petrosani</item>
+        <item>Vulcan</item>
+        <item>Lupeni</item>
+    </string-array>
+    <string-array name="lista_sibiu">
+        <item>Sibiu</item>
+        <item>Medias</item>
+        <item>Cisnadie</item>
+        <item>Avrig</item>
+        <item>Dumbraveni</item>
+    </string-array>
+
+    <string name="title_activity_logare_google_plus">LogareGooglePlus</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Localitati -->
+    <string name="title_activity_alba_iulia">AlbaIulia</string>
+    <string name="title_activity_cluj_napoca">ClujNapoca</string>
+    <string name="title_activity_brasov">Brasov</string>
+    <string name="label_judet">Selectati Judetul</string>
+    <string name="label_localitate">Selectati Localitatea</string>
+    <!--Lista firme -->
+    <string name="denumire"/>
+    <string name="tip_firma"/>
+    <string name="descriere"/>
+    <string name="pagina_web">Pagina Web</string>
+    <string name="pagina_fb">Facebook</string>
+    <string name="title_activity_logare_google_and_facebook"/>
+    <string name="title_activity_login"/>
+    <string name="app_id">678185935646521</string>
+    <string name="title_activity_creare_cont_fw">creare_cont_fw</string>
+    <string name="title_activity_inregistrare">Inregistrare</string>
+
+</resources>

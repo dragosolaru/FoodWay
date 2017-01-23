@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.dragos.foodway.main.MeniulPrincipal"
+    android:background="@drawable/fundal">
+
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="220dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/the_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Comanda"
+        android:id="@+id/btnComanda"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:elegantTextHeight="false"
+        android:background="@drawable/whiteroundbtn"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:textColor="#710000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Locatii"
+        android:id="@+id/btnRestaurante"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_below="@+id/btnComanda"
+        android:background="@drawable/whiteroundbtn"
+
+        android:layout_marginTop="10dp"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:textStyle="bold"
+        android:textColor="#710000"
+        android:layout_alignLeft="@+id/btnComanda"
+        android:layout_alignStart="@+id/btnComanda"
+        android:layout_alignRight="@+id/btnComanda"
+        android:layout_alignEnd="@+id/btnComanda"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inregistrare"
+        android:id="@+id/btnInregistrare"
+        android:layout_row="0"
+        android:layout_column="2"
+        android:layout_below="@+id/btnRestaurante"
+        android:background="@drawable/whiteroundbtn"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="#710000"
+        android:layout_alignLeft="@+id/btnRestaurante"
+        android:layout_alignStart="@+id/btnRestaurante"
+        android:layout_alignRight="@+id/btnRestaurante"
+        android:layout_alignEnd="@+id/btnRestaurante"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Way"
+        android:id="@+id/btnFoodWay"
+        android:layout_row="0"
+        android:layout_column="2"
+        android:background="@drawable/whiteroundbtn"
+        android:layout_below="@+id/btnInregistrare"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="#710000"
+        android:layout_alignLeft="@+id/btnInregistrare"
+        android:layout_alignStart="@+id/btnInregistrare"
+        android:layout_alignRight="@+id/btnInregistrare"
+        android:layout_alignEnd="@+id/btnInregistrare"
+        android:textSize="20sp" />
+</RelativeLayout>

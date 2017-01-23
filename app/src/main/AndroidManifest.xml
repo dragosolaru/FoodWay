@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dragos.foodway" >
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".functionalitati.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.AppCompat.NoActionBar" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationName"
+            android:value="@string/app_name" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider678185935646521"
+            android:exported="true" />
+
+        <activity
+            android:name=".main.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.MeniulPrincipal"
+            android:label="@string/title_activity_meniu_principal"
+            android:parentActivityName=".main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".spinnersiliste.LocatiiJudetOras"
+            android:label="@string/title_activity_location_city"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name=".orase.AlbaIulia"
+            android:label="@string/title_activity_alba_iulia"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" >
+            <intent-filter>
+                <action android:name="com.example.dragos.foodway.orase.Alba_Iulia" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".spinnersiliste.SingleItemView"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name=".orase.ClujNapoca"
+            android:label="@string/title_activity_cluj_napoca"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" >
+            <intent-filter>
+                <action android:name="com.example.dragos.foodway.orase.Cluj_Napoca" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".orase.Brasov"
+            android:label="@string/title_activity_brasov"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" >
+            <intent-filter>
+                <action android:name="com.example.dragos.foodway.orase.Brasov" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".functionalitati.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.shamanland.facebook.likebutton.FacebookLikeActivity"
+            android:label="@string/com_shamanland_facebook"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Facebook.Like" />
+        <activity
+            android:name=".CreareContFw"
+            android:label="@string/title_activity_creare_cont_fw" >
+        </activity>
+        <activity
+            android:name=".CreareContFW"
+            android:label="@string/title_activity_creare_cont_fw" >
+        </activity>
+        <activity
+            android:name=".Inregistrare"
+            android:label="@string/title_activity_inregistrare" >
+        </activity>
+    </application>
+
+</manifest>

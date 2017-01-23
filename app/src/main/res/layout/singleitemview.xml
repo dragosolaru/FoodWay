@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fundal">
+
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="220dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/the_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_vertical" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundtoprightcorner"
+        android:id="@+id/details"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_above="@+id/adresa_program">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:id="@+id/logonametype">
+
+            <ImageView
+
+                android:id="@+id/logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/descriere"
+                android:layout_alignStart="@+id/descriere"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_rowSpan="2"
+                android:layout_weight="0" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/nametype">
+
+                <TextView
+                    android:id="@+id/denumire"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:textSize="29sp"
+                    android:textAlignment="gravity"
+                    android:textColor="#710000"
+                    android:shadowColor="#7d7d7d"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/logo"
+                    android:layout_alignRight="@+id/descriere"
+                    android:layout_alignEnd="@+id/descriere"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:text="sdas"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tip_firma"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:textSize="22sp"
+                    android:textColor="#710000"
+                    android:textAlignment="gravity"
+                    android:shadowColor="#7d7d7d"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:layout_below="@+id/denumire"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/logo"
+                    android:layout_alignRight="@+id/denumire"
+                    android:layout_alignEnd="@+id/denumire"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:text="sdasda" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/description">
+
+            <TextView
+                android:id="@+id/descriere"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#710000"
+                android:layout_below="@+id/logo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:shadowColor="#9A9A9A"
+                android:shadowDx="0.6"
+                android:shadowDy="0.6"
+                android:shadowRadius="0.5"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:fadeScrollbars="false"
+                android:ellipsize="end"
+                android:maxHeight="140dp"
+                android:layout_column="0"
+                android:layout_columnSpan="2"
+                android:layout_row="2"
+                android:text="asda"
+                android:layout_rowSpan="1"
+                android:maxLines="7" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/adresa_program"
+        android:layout_gravity="center"
+        android:layout_above="@+id/web_fb"
+        android:layout_alignLeft="@+id/details"
+        android:layout_alignStart="@+id/details"
+        android:layout_alignRight="@+id/details"
+        android:layout_alignEnd="@+id/details"
+        android:background="#E6ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/adresa"
+            android:layout_weight="0.50"
+            android:textSize="18sp"
+            android:shadowColor="#9A9A9A"
+            android:shadowDx="0.6"
+            android:shadowDy="0.6"
+            android:shadowRadius="0.5"
+            android:width="50dp"
+            android:textColor="#710000"
+            android:gravity="center|top"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/program"
+            android:layout_weight="0.50"
+            android:textSize="18sp"
+            android:shadowColor="#9A9A9A"
+            android:shadowDx="0.6"
+            android:shadowDy="0.6"
+            android:shadowRadius="0.5"
+            android:width="50dp"
+            android:textColor="#710000"
+            android:gravity="center|top"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/web_fb"
+        android:layout_weight="0.50"
+        android:layout_gravity="center_vertical"
+        android:background="#E6ffffff"
+        android:layout_above="@+id/call_direct_taxi"
+        android:layout_alignLeft="@+id/adresa_program"
+        android:layout_alignStart="@+id/adresa_program"
+        android:layout_alignRight="@+id/adresa_program"
+        android:layout_alignEnd="@+id/adresa_program">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="28.5dp"
+            android:text="@string/pagina_web"
+            android:id="@+id/btn_web"
+            android:background="@drawable/facebookbtn"
+            android:shadowColor="#9A9A9A"
+            android:shadowDx="0.6"
+            android:shadowDy="0.6"
+            android:shadowRadius="0.5"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:textColor="#ffffffff"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <com.shamanland.facebook.likebutton.FacebookLikePlugin
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/call_direct_taxi"
+            android:layout_alignRight="@+id/descriere"
+            android:layout_alignEnd="@+id/descriere"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+            <com.shamanland.facebook.likebutton.FacebookLikeButton
+                style="@style/Widget.FacebookLikeButton"
+                android:id="@+id/btn_like"
+                android:height="40dp" />
+            <com.shamanland.facebook.likebutton.FacebookLikeBox
+                style="@style/Widget.FacebookLikeBox"
+                app:calloutMarker="left"
+
+                android:height="40dp" />
+        </com.shamanland.facebook.likebutton.FacebookLikePlugin>
+
+        <!--<Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/pagina_fb"
+            android:id="@+id/btn_pagina_fb"
+            android:background="@drawable/facebookbtn"
+            android:shadowColor="#ff3e3e3e"
+            android:shadowDx="0.6"
+            android:shadowDy="0.6"
+            android:shadowRadius="0.5"
+            android:textColor="#ffffffff"
+            android:layout_alignTop="@+id/web_fb"
+            android:layout_alignRight="@+id/descriere"
+            android:layout_alignEnd="@+id/descriere"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_weight="0.50" />-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/call_direct_taxi"
+        android:background="@drawable/bottomleftrightcorner"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/web_fb"
+        android:layout_alignEnd="@+id/web_fb"
+        android:layout_alignLeft="@+id/web_fb"
+        android:layout_alignStart="@+id/web_fb"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/btn_call_direct"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/greenroundbtn"
+            android:drawableLeft="@drawable/telefon"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#E6ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center|right" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/btn_call_taxi"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/orangeroundbtn"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/taxi"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#E6ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center|right"
+            android:layout_marginBottom="5dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
